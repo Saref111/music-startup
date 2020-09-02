@@ -18,58 +18,182 @@
 
 <body>
     <header class="header">
-        <div class="logo-header">
-            <a class="logo-header__link">
-                <picture>
-                <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
-                <img src="" width="" height="" alt="logo">
-                </picture>
-            </a>
-        </div>
-        <nav class="header__nav main-nav">
-            <button class="main-nav__toggle main-nav__toggle--no-js" id="button-menu" type="button">
-                <svg focusable="false" class="main-nav__button-icon-open" width="20" height="18">
-                    <use xlink:href="img/sprite.svg#icon-open"></use>
-                </svg>
-                <svg focusable="false" class="main-nav__button-icon-close" width="20" height="20">
-                    <use xlink:href="img/sprite.svg#icon-close"></use>
-                </svg>
-                <span class="visually-hidden">Открыть меню</span>
-            </button>
-            <ul class="main-nav__list">
-                <li class="main-nav__item">
-                    <a href="" class="main__nav-link">Главная</a>
-                </li>
-                <li class="main-nav__item">
-                    <a href="" class="main__nav-link">Студии</a>
-                </li>
-                <li class="main-nav__item">
-                    <a href="" class="main__nav-link">Трансляции</a>
-                </li>
-                <li class="main-nav__item">
-                    <a href="" class="main__nav-link main__nav-link--current">Проекты</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="header__user-nav user-nav">
-            <button class="user-nav__btn" type="button">
-                <svg focusable="false" class="user-nav__button-icon-open" width="20" height="18">
-                    <use xlink:href="img/sprite.svg#icon-search"></use>
-                </svg>
-            </button>
-            <button class="user-nav__btn" type="button">
-                <svg focusable="false" class="user-nav__button-icon-open" width="20" height="18">
-                    <use xlink:href="img/sprite.svg#icon-search"></use>
-                </svg>
-            </button>
-            <button class="user-nav__btn user-nav__btn--avatar">
-                <picture>
-                    <source>
-                    <img src="./img/" alt="User avatar">
-                </picture>
-            </button>
+        <div class="header-wrapper">
+            <div class="logo-header">
+                <a class="logo-header__link">
+                    <picture>
+                    <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+                    <img src="" width="" height="" alt="logo">
+                    </picture>
+                </a>
+            </div>
+            <nav class="header__nav main-nav">
+                <button class="main-nav__toggle main-nav__toggle--no-js" id="button-menu" type="button">
+                    <svg focusable="false" class="main-nav__button-icon-open" width="20" height="18">
+                        <use xlink:href="img/sprite.svg#icon-open"></use>
+                    </svg>
+                    <svg focusable="false" class="main-nav__button-icon-close" width="20" height="20">
+                        <use xlink:href="img/sprite.svg#icon-close"></use>
+                    </svg>
+                    <span class="visually-hidden">Открыть меню</span>
+                </button>
+                <ul class="main-nav__list">
+                    <li class="main-nav__item">
+                        <a href="" class="main__nav-link">Главная</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="" class="main__nav-link">Студии</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="" class="main__nav-link">Трансляции</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="" class="main__nav-link main__nav-link--current">Проекты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__user-nav user-nav">
+                <button class="user-nav__btn" type="button">
+                    <svg focusable="false" class="user-nav__icon" width="20" height="18">
+                        <use xlink:href="img/sprite.svg#icon-search"></use>
+                    </svg>
+                </button>
+                <button class="user-nav__btn" type="button">
+                    <svg focusable="false" class="user-nav__icon" width="20" height="18">
+                        <use xlink:href="img/sprite.svg#icon-search"></use>
+                    </svg>
+                </button>
+                <button class="user-nav__btn user-nav__btn--avatar">
+                    <picture>
+                        <source>
+                        <img src="./img/" alt="User avatar">
+                    </picture>
+                </button>
+            </div>
         </div>
     </header>
+
+    <main class="main">
+        <h1 class="visually-hidden">Main Header</h1>
+        <div class="main__wrapper">
+            <section class="main__menu">
+                <h2 class="visually-hidden">Меню страницы</h2>
+                <ul class="menu">
+                    <li class="menu__item menu__item--current">
+                        <a href="#" class="menu__link">Все</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Музыка</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Песни</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Видео</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Тексты</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="main__main-slider main__slider">
+                <h2 class="visually-hidden">Главные события</h2>
+                <button class="main__slider-btn main__slider-btn--prev">
+                    <span class="visually-hidden">Назад</span>
+                </button>
+                <ul class="main-slider__list">
+                    <li class="main-slider__slide-wrapper">
+                        <article class="main-slider__slide main-slide">
+                            <h3 class="main-slide__title">Открытый рэп-баттл</h3>
+                            <p class="main-slide__author">Maximum Company</p>
+                            <p class="main-slide__description">Первый открытый рэп-баттл в Астане. Прими участие и соревнуйся за главный приз!</p>
+                            <address class="main-slide__address">
+                                <svg focusable="false" class="main-slide__address-icon" width="20" height="18">
+                                    <use xlink:href="img/sprite.svg#icon-"></use>
+                                </svg>
+                                <span>
+                                    г. Павлодар, ул. Нокина 65а
+                                </span>
+                            </address>
+                            <div class="main-slide__more">
+                                <dl class="main-slide__info">
+                                    <dt class="main-slide__date">Дата и время:</dt>
+                                    <dd>
+                                        <time datetime="2020-08-28 16:00">суббота, 28 августа, 16:00 </time>
+                                    </dd>
+                                    <dt class="main-slide__price-title">Цена участия:</dt>
+                                    <dd class="main-slide__price-value">Бесплатно</dd>
+                                </dl>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="main-slider__slide-wrapper">
+                        <article class="main-slider__slide main-slide">
+                            <h3 class="main-slide__title">Открытый рэп-баттл</h3>
+                            <p class="main-slide__author">Maximum Company</p>
+                            <p class="main-slide__description">Первый открытый рэп-баттл в Астане. Прими участие и соревнуйся за главный приз!</p>
+                            <address class="main-slide__address">
+                                <svg focusable="false" class="main-slide__address-icon" width="20" height="18">
+                                    <use xlink:href="img/sprite.svg#icon-"></use>
+                                </svg>
+                                <span>
+                                    г. Павлодар, ул. Нокина 65а
+                                </span>
+                            </address>
+                            <div class="main-slide__more">
+                                <dl class="main-slide__info">
+                                    <dt class="main-slide__date">Дата и время:</dt>
+                                    <dd>
+                                        <time datetime="2020-08-28 16:00">суббота, 28 августа, 16:00 </time>
+                                    </dd>
+                                    <dt class="main-slide__price-title">Цена участия:</dt>
+                                    <dd class="main-slide__price-value">Бесплатно</dd>
+                                </dl>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="main-slider__slide-wrapper">
+                        <article class="main-slider__slide main-slide">
+                            <h3 class="main-slide__title">Открытый рэп-баттл</h3>
+                            <p class="main-slide__author">Maximum Company</p>
+                            <p class="main-slide__description">Первый открытый рэп-баттл в Астане. Прими участие и соревнуйся за главный приз!</p>
+                            <address class="main-slide__address">
+                                <svg focusable="false" class="main-slide__address-icon" width="20" height="18">
+                                    <use xlink:href="img/sprite.svg#icon-"></use>
+                                </svg>
+                                <span>
+                                    г. Павлодар, ул. Нокина 65а
+                                </span>
+                            </address>
+                            <div class="main-slide__more">
+                                <dl class="main-slide__info">
+                                    <dt class="main-slide__date">Дата и время:</dt>
+                                    <dd>
+                                        <time datetime="2020-08-28 16:00">суббота, 28 августа, 16:00 </time>
+                                    </dd>
+                                    <dt class="main-slide__price-title">Цена участия:</dt>
+                                    <dd class="main-slide__price-value">Бесплатно</dd>
+                                </dl>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+                <button class="main__slider-btn main__slider-btn--next">
+                    <span class="visually-hidden">Вперед</span>
+                </button>
+            </section>
+            <section class="main__main-slider slider">
+                <h2 class="visually-hidden">Новые проекты</h2>
+                <ul class="slider__list">
+                    <li class="slider__slide-wrapper">
+                        <article class="slider__slide">
+
+                        </article>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
 </body>
 
 </html>
