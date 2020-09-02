@@ -113,7 +113,7 @@ gulp.task("build", gulp.series(
   "webp",
   "html",
   "css",
-  // "js",
+  "js",
   "css-nomin"
 ));
 
