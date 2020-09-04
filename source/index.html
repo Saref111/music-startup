@@ -19,10 +19,10 @@
 
 <body>
     <header class="header">
-        <div class="header-wrapper">
-            <div class="logo-header">
+        <div class="header__wrapper">
+            <div class="header__logo-header logo-header">
                 <a class="logo-header__link">
-                    <img src="img/logo-header.svg" width="" height="" alt="logo">
+                    <img src="img/logo-header.svg" width="100" height="21" alt="logo">
                 </a>
             </div>
             <nav class="header__nav main-nav">
@@ -51,21 +51,29 @@
                 </ul>
             </nav>
             <div class="header__user-nav user-nav">
-                <button class="user-nav__btn" type="button">
-                    <svg focusable="false" class="user-nav__icon" width="20" height="18">
-                        <use xlink:href="img/sprite.svg#icon-search"></use>
-                    </svg>
-                </button>
-                <button class="user-nav__btn" type="button">
-                    <svg focusable="false" class="user-nav__icon" width="24" height="24">
-                        <use xlink:href="img/sprite.svg#icn_search"></use>
-                    </svg>
-                </button>
-                <button class="user-nav__btn user-nav__btn--avatar">
-                    <picture>
-                        <img src="./img/avatar.jpg" srcset="img/avatar@2x.jpg 2x" alt="User avatar">
-                    </picture>
-                </button>
+                <ul class="user-nav__list">
+                    <li class="user-nav__item">
+                        <button class="user-nav__btn" type="button">
+                            <svg class="user-nav__icon" width="24" height="24">
+                                <use xlink:href="img/sprite.svg#icn_search"></use>
+                            </svg>
+                        </button>
+                    </li>
+                    <li class="user-nav__item">
+                        <button class="user-nav__btn" type="button">
+                            <svg class="user-nav__icon" width="25" height="25">
+                                <use xlink:href="img/sprite.svg#icn_notifications"></use>
+                            </svg>
+                        </button>
+                    </li>
+                    <li class="user-nav__item">
+                        <button class="user-nav__btn user-nav__btn--avatar">
+                            <picture>
+                                <img src="./img/avatar.png" srcset="img/avatar@2x.png 2x" alt="User avatar">
+                            </picture>
+                        </button>
+                    </li>
+                </ul>
             </div>
         </div>
     </header>
