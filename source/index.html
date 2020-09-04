@@ -105,32 +105,35 @@
 
             <section class="main__main-slider main-slider">
                 <h2 class="visually-hidden">Главные события</h2>
-                <button class="main__slider-btn main__slider-btn--prev">
+                <button class="main-slider__btn main-slider__btn--prev">
                     <span class="visually-hidden">Назад</span>
                 </button>
                 <ul class="main-slider__list">
                     <li class="main-slider__slide-wrapper">
                         <article class="main-slider__slide main-slide">
-                            <h3 class="main-slide__title">Открытый рэп-баттл</h3>
-                            <p class="main-slide__author">Maximum Company</p>
-                            <p class="main-slide__description">Первый открытый рэп-баттл в Астане. Прими участие и соревнуйся за главный приз!</p>
-                            <address class="main-slide__address">
-                                <svg focusable="false" class="main-slide__address-icon" width="20" height="18">
-                                    <use xlink:href="img/sprite.svg#icon-"></use>
-                                </svg>
-                                <span>
-                                    г. Павлодар, ул. Нокина 65а
-                                </span>
-                            </address>
+                            <div class="main-slider__info">
+                                <h3 class="main-slide__title">Открытый рэп-баттл</h3>
+                                <p class="main-slide__author">Maximum Company</p>
+                                <p class="main-slide__description">Первый открытый рэп-баттл в Астане.<br> Прими участие и соревнуйся за главный приз!</p>
+                                <address class="main-slide__address">
+                                    <svg focusable="false" class="main-slide__address-icon" width="21" height="28">
+                                        <use xlink:href="img/sprite.svg#icn_location"></use>
+                                    </svg>
+                                    <span>
+                                        г. Павлодар, ул. Нокина 65а
+                                    </span>
+                                </address>
+                            </div>
                             <div class="main-slide__more">
                                 <dl class="main-slide__info">
                                     <dt class="main-slide__date">Дата и время:</dt>
                                     <dd class="main-slide__date-value">
                                         <time datetime="2020-08-28 16:00">суббота, 28 августа, 16:00 </time>
                                     </dd>
-                                    <dt class="main-slide__price-title">Цена участия:</dt>
+                                    <dt class="main-slide__price">Цена участия:</dt>
                                     <dd class="main-slide__price-value">Бесплатно</dd>
                                 </dl>
+                                <button class="main-slide__more-btn">Подробнее</button>
                             </div>
                         </article>
                     </li>
@@ -138,10 +141,10 @@
                         <article class="main-slider__slide main-slide">
                             <h3 class="main-slide__title">Открытый рэп-баттл</h3>
                             <p class="main-slide__author">Maximum Company</p>
-                            <p class="main-slide__description">Первый открытый рэп-баттл в Астане. Прими участие и соревнуйся за главный приз!</p>
+                            <p class="main-slide__description">Первый открытый рэп-баттл в Астане.<br> Прими участие и соревнуйся за главный приз!</p>
                             <address class="main-slide__address">
-                                <svg focusable="false" class="main-slide__address-icon" width="20" height="18">
-                                    <use xlink:href="img/sprite.svg#icon-"></use>
+                                <svg focusable="false" class="main-slide__address-icon" width="21" height="28">
+                                    <use xlink:href="img/sprite.svg#icn_location"></use>
                                 </svg>
                                 <span>
                                     г. Павлодар, ул. Нокина 65а
@@ -163,7 +166,7 @@
                         <article class="main-slider__slide main-slide">
                             <h3 class="main-slide__title">Открытый рэп-баттл</h3>
                             <p class="main-slide__author">Maximum Company</p>
-                            <p class="main-slide__description">Первый открытый рэп-баттл в Астане. Прими участие и соревнуйся за главный приз!</p>
+                            <p class="main-slide__description">Первый открытый рэп-баттл в Астане.<br> Прими участие и соревнуйся за главный приз!</p>
                             <address class="main-slide__address">
                                 <svg focusable="false" class="main-slide__address-icon" width="20" height="18">
                                     <use xlink:href="img/sprite.svg#icon-"></use>
@@ -185,7 +188,7 @@
                         </article>
                     </li>
                 </ul>
-                <button class="main__slider-btn main__slider-btn--next">
+                <button class="main-slider__btn main-slider__btn--next">
                     <span class="visually-hidden">Вперед</span>
                 </button>
             </section>
