@@ -4,7 +4,7 @@
   padding: 0;
 }
 
-@mixin fonts($size: 14px, $weight: 400, $color: #000000, $name: "Oswald") {
+@mixin fonts($size: 14px, $weight: 400, $color: #000000, $name: "Open Sans") {
   font-family: $name, "Arial", sans-serif;
   font-size: $size;
   font-weight: $weight;
