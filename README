@@ -1,0 +1,5 @@
+How to start:
+
+1) Make sure you have Node.js on your computer. Then run "npm i" from the project folder.
+
+2) Then run "npm run start", it will open the page in your browser.
