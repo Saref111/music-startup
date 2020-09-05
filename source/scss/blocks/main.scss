@@ -1,5 +1,7 @@
 .main {
     background-color: $bg-blue;
+
+    margin-bottom: 47px;
 }
 
 .main__wrapper {
@@ -15,7 +17,7 @@
     margin-bottom: 38px;
 }
 
-.main__main-slider {
+.main__main-slider:not(:last-child) {
     margin-bottom: 33px;
 }
 

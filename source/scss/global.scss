@@ -35,6 +35,12 @@ body {
 }
 
 a {
+  @include hover-focus-active-link; // only for demonstration
+  
   text-decoration: none;
   color: $gray; 
+}
+
+button {
+  @include hover-focus-active-link; // only for demonstration
 }
