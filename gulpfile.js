@@ -119,6 +119,15 @@ gulp.task("css-nomin", function () {
     .pipe(gulp.dest("build/css"));
 });
 
+gulp.task("rename", function () {
+  return gulp.src("source/img/*")
+    .pipe(rename(function(path) {
+      var name = path.basename;
+      path.basename = name.split(" ").join("");
+    }))
+    .pipe(gulp.dest("source/img/"));
+});
+
 gulp.task("build", gulp.series(
   "clean",
   "copy",
