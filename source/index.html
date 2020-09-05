@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project name</title>
     <link rel="stylesheet" href="./css/style.min.css">
-    <script src="./js/script.min.js"></script>
     <link rel="preload" href="./fonts/open-sans-v17-latin_cyrillic-ext-600.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="./fonts/open-sans-v17-latin_cyrillic-ext-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <script>
@@ -102,14 +101,14 @@
                     </li>
                 </ul>
             </section>
-
-            <section class="main__main-slider main-slider">
+            
+            <section class="main__main-slider main-slider swiper-container">
                 <h2 class="visually-hidden">Главные события</h2>
                 <button class="main-slider__btn main-slider__btn--prev">
                     <span class="visually-hidden">Назад</span>
                 </button>
-                <ul class="main-slider__list">
-                    <li class="main-slider__slide-wrapper">
+                <ul class="main-slider__list swiper-wrapper">
+                    <li class="main-slider__slide-wrapper swiper-slide">
                         <article class="main-slider__slide main-slide">
                             <div class="main-slider__info">
                                 <h3 class="main-slide__title">Открытый рэп-баттл</h3>
@@ -137,53 +136,59 @@
                             </div>
                         </article>
                     </li>
-                    <li class="main-slider__slide-wrapper">
+                    <li class="main-slider__slide-wrapper swiper-slide">
                         <article class="main-slider__slide main-slide">
-                            <h3 class="main-slide__title">Открытый рэп-баттл</h3>
-                            <p class="main-slide__author">Maximum Company</p>
-                            <p class="main-slide__description">Первый открытый рэп-баттл в Астане.<br> Прими участие и соревнуйся за главный приз!</p>
-                            <address class="main-slide__address">
-                                <svg focusable="false" class="main-slide__address-icon" width="21" height="28">
-                                    <use xlink:href="img/sprite.svg#icn_location"></use>
-                                </svg>
-                                <span>
-                                    г. Павлодар, ул. Нокина 65а
-                                </span>
-                            </address>
+                            <div class="main-slider__info">
+                                <h3 class="main-slide__title">Открытый рэп-баттл</h3>
+                                <p class="main-slide__author">Maximum Company</p>
+                                <p class="main-slide__description">Первый открытый рэп-баттл в Астане.<br> Прими участие и соревнуйся за главный приз!</p>
+                                <address class="main-slide__address">
+                                    <svg focusable="false" class="main-slide__address-icon" width="21" height="28">
+                                        <use xlink:href="img/sprite.svg#icn_location"></use>
+                                    </svg>
+                                    <span>
+                                        г. Павлодар, ул. Нокина 65а
+                                    </span>
+                                </address>
+                            </div>
                             <div class="main-slide__more">
                                 <dl class="main-slide__info">
                                     <dt class="main-slide__date">Дата и время:</dt>
-                                    <dd>
+                                    <dd class="main-slide__date-value">
                                         <time datetime="2020-08-28 16:00">суббота, 28 августа, 16:00 </time>
                                     </dd>
-                                    <dt class="main-slide__price-title">Цена участия:</dt>
+                                    <dt class="main-slide__price">Цена участия:</dt>
                                     <dd class="main-slide__price-value">Бесплатно</dd>
                                 </dl>
+                                <button class="main-slide__more-btn">Подробнее</button>
                             </div>
                         </article>
                     </li>
-                    <li class="main-slider__slide-wrapper">
+                    <li class="main-slider__slide-wrapper swiper-slide">
                         <article class="main-slider__slide main-slide">
-                            <h3 class="main-slide__title">Открытый рэп-баттл</h3>
-                            <p class="main-slide__author">Maximum Company</p>
-                            <p class="main-slide__description">Первый открытый рэп-баттл в Астане.<br> Прими участие и соревнуйся за главный приз!</p>
-                            <address class="main-slide__address">
-                                <svg focusable="false" class="main-slide__address-icon" width="20" height="18">
-                                    <use xlink:href="img/sprite.svg#icon-"></use>
-                                </svg>
-                                <span>
-                                    г. Павлодар, ул. Нокина 65а
-                                </span>
-                            </address>
+                            <div class="main-slider__info">
+                                <h3 class="main-slide__title">Открытый рэп-баттл</h3>
+                                <p class="main-slide__author">Maximum Company</p>
+                                <p class="main-slide__description">Первый открытый рэп-баттл в Астане.<br> Прими участие и соревнуйся за главный приз!</p>
+                                <address class="main-slide__address">
+                                    <svg focusable="false" class="main-slide__address-icon" width="21" height="28">
+                                        <use xlink:href="img/sprite.svg#icn_location"></use>
+                                    </svg>
+                                    <span>
+                                        г. Павлодар, ул. Нокина 65а
+                                    </span>
+                                </address>
+                            </div>
                             <div class="main-slide__more">
                                 <dl class="main-slide__info">
                                     <dt class="main-slide__date">Дата и время:</dt>
-                                    <dd>
+                                    <dd class="main-slide__date-value">
                                         <time datetime="2020-08-28 16:00">суббота, 28 августа, 16:00 </time>
                                     </dd>
-                                    <dt class="main-slide__price-title">Цена участия:</dt>
+                                    <dt class="main-slide__price">Цена участия:</dt>
                                     <dd class="main-slide__price-value">Бесплатно</dd>
                                 </dl>
+                                <button class="main-slide__more-btn">Подробнее</button>
                             </div>
                         </article>
                     </li>
@@ -192,16 +197,16 @@
                     <span class="visually-hidden">Вперед</span>
                 </button>
             </section>
-
+            
             <section class="main__main-slider slider">
                 <div class="slider__title-wrapper">
                     <h2 class="slider__title">Новые проекты</h2>
                     <a href="#" class="slider__more">Смотреть все</a>
                     
                 </div>
-                <div class="slider__list-wrapper">
-                    <ul class="slider__list">
-                        <li class="slider__slide-wrapper">
+                <div class="slider__list-wrapper swiper-container">
+                    <ul class="slider__list swiper-wrapper">
+                        <li class="slider__slide-wrapper swiper-slide">
                             <article class="slider__slide slide">
                                 <h3 class="slide__title"><a href="#" class="slide__title-link">Голос страны KZ</a></h3>
                                 <a href="#" class="slide__img-link">
@@ -212,7 +217,7 @@
                                 <p class="slide__author">Maximum Company</p>
                             </article>
                         </li>
-                        <li class="slider__slide-wrapper">
+                        <li class="slider__slide-wrapper swiper-slide">
                             <article class="slider__slide slide">
                                 <h3 class="slide__title"><a href="#" class="slide__title-link">Лучший автор песен</a></h3>
                                 <a href="#" class="slide__img-link">
@@ -223,7 +228,7 @@
                                 <p class="slide__author">Maximum Company</p>
                             </article>
                         </li>
-                        <li class="slider__slide-wrapper">
+                        <li class="slider__slide-wrapper swiper-slide">
                             <article class="slider__slide slide">
                                 <h3 class="slide__title"><a href="#" class="slide__title-link">The Stars</a></h3>
                                 <a href="#" class="slide__img-link">
@@ -234,7 +239,7 @@
                                 <p class="slide__author">Maximum Company</p>
                             </article>
                         </li>
-                        <li class="slider__slide-wrapper">
+                        <li class="slider__slide-wrapper swiper-slide">
                             <article class="slider__slide slide">
                                 <h3 class="slide__title"><a href="#" class="slide__title-link">Top Singer</a></h3>
                                 <a href="#" class="slide__img-link">
@@ -249,16 +254,16 @@
                 </div>
                 
             </section>
-
+            
             <section class="main__main-slider slider">
                 <div class="slider__title-wrapper">
                     <h2 class="slider__title">Проекты недели</h2>
                     <a href="#" class="slider__more">Смотреть все</a>
                     
                 </div>
-                <div class="slider__list-wrapper">
-                    <ul class="slider__list">
-                        <li class="slider__slide-wrapper">
+                <div class="slider__list-wrapper swiper-container">
+                    <ul class="slider__list swiper-wrapper">
+                        <li class="slider__slide-wrapper swiper-slide">
                             <article class="slider__slide slide">
                                 <h3 class="slide__title"><a href="#" class="slide__title-link">Голос страны KZ</a></h3>
                                 <a href="#" class="slide__img-link">
@@ -269,7 +274,7 @@
                                 <p class="slide__author">Maximum Company</p>
                             </article>
                         </li>
-                        <li class="slider__slide-wrapper">
+                        <li class="slider__slide-wrapper swiper-slide">
                             <article class="slider__slide slide">
                                 <h3 class="slide__title"><a href="#" class="slide__title-link">Лучший автор песен</a></h3>
                                 <a href="#" class="slide__img-link">
@@ -280,7 +285,7 @@
                                 <p class="slide__author">Maximum Company</p>
                             </article>
                         </li>
-                        <li class="slider__slide-wrapper">
+                        <li class="slider__slide-wrapper swiper-slide">
                             <article class="slider__slide slide">
                                 <h3 class="slide__title"><a href="#" class="slide__title-link">The Stars</a></h3>
                                 <a href="#" class="slide__img-link">
@@ -291,7 +296,7 @@
                                 <p class="slide__author">Maximum Company</p>
                             </article>
                         </li>
-                        <li class="slider__slide-wrapper">
+                        <li class="slider__slide-wrapper swiper-slide">
                             <article class="slider__slide slide">
                                 <h3 class="slide__title"><a href="#" class="slide__title-link">Top Singer</a></h3>
                                 <a href="#" class="slide__img-link">
@@ -313,9 +318,9 @@
                     <a href="#" class="slider__more">Смотреть все</a>
                     
                 </div>
-                <div class="slider__list-wrapper">
-                    <ul class="slider__list">
-                        <li class="slider__slide-wrapper">
+                <div class="slider__list-wrapper swiper-container">
+                    <ul class="slider__list swiper-wrapper">
+                        <li class="slider__slide-wrapper swiper-slide">
                             <article class="slider__slide slide">
                                 <h3 class="slide__title"><a href="#" class="slide__title-link">Голос страны KZ</a></h3>
                                 <a href="#" class="slide__img-link">
@@ -326,7 +331,7 @@
                                 <p class="slide__author">Maximum Company</p>
                             </article>
                         </li>
-                        <li class="slider__slide-wrapper">
+                        <li class="slider__slide-wrapper swiper-slide">
                             <article class="slider__slide slide">
                                 <h3 class="slide__title"><a href="#" class="slide__title-link">Лучший автор песен</a></h3>
                                 <a href="#" class="slide__img-link">
@@ -337,7 +342,7 @@
                                 <p class="slide__author">Maximum Company</p>
                             </article>
                         </li>
-                        <li class="slider__slide-wrapper">
+                        <li class="slider__slide-wrapper swiper-slide">
                             <article class="slider__slide slide">
                                 <h3 class="slide__title"><a href="#" class="slide__title-link">The Stars</a></h3>
                                 <a href="#" class="slide__img-link">
@@ -348,7 +353,7 @@
                                 <p class="slide__author">Maximum Company</p>
                             </article>
                         </li>
-                        <li class="slider__slide-wrapper">
+                        <li class="slider__slide-wrapper swiper-slide">
                             <article class="slider__slide slide">
                                 <h3 class="slide__title"><a href="#" class="slide__title-link">Top Singer</a></h3>
                                 <a href="#" class="slide__img-link">
@@ -365,7 +370,7 @@
             </section>
         </div>
     </main>
-
+    
 
     <footer class="footer">
         <div class="footer__wrapper">
@@ -388,22 +393,22 @@
                         <span class="visually-hidden">Instagram</span>
                         <svg class="footer-list__icon" width="25" height="25">
                             <use xlink:href="img/sprite.svg#icn_ig">
-                        </svg>
-                    </a>
-                </li>
-                <li class="footer-list__item footer-list__item--socials">
-                    <a href="#" class="footer-list__link">
-                        <span class="visually-hidden">Facebook</span>
-                        <svg class="footer-list__icon" width="25" height="25">
-                            <use xlink:href="img/sprite.svg#icn_fb">
-                        </svg>
-                    </a>
-                </li>
-                <li class="footer-list__item footer-list__item--socials">
-                    <a href="#" class="footer-list__link">
-                        <span class="visually-hidden">Youtube</span>
-                        <svg class="footer-list__icon" width="25" height="25">
-                            <use xlink:href="img/sprite.svg#icn_youtube">
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-list__item footer-list__item--socials">
+                        <a href="#" class="footer-list__link">
+                            <span class="visually-hidden">Facebook</span>
+                            <svg class="footer-list__icon" width="25" height="25">
+                                <use xlink:href="img/sprite.svg#icn_fb">
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-list__item footer-list__item--socials">
+                            <a href="#" class="footer-list__link">
+                                <span class="visually-hidden">Youtube</span>
+                                <svg class="footer-list__icon" width="25" height="25">
+                                    <use xlink:href="img/sprite.svg#icn_youtube">
                         </svg>
                     </a>
                 </li>
@@ -412,12 +417,15 @@
                         <span class="visually-hidden">Telegram</span>
                         <svg class="footer-list__icon" width="25" height="25">
                             <use xlink:href="img/sprite.svg#icn_telegram">
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-        </div>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
     </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/script.min.js">
+    </script>
 </body>
 
 </html>

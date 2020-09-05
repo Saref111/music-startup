@@ -58,10 +58,11 @@
     position: absolute;
     display: flex;
 
-    width: calc(100% * 3);
+    width: 100% * $main_sliders_count;
     height: 500px;
 }
 
 .main-slider__slide-wrapper {
-    width: calc(100% / 3);     
+    width: 100% / $main_sliders_count;   
+    border-radius: 16px;  
 }

@@ -7,7 +7,7 @@
 
 .slider__title {
     margin: 0;
-
+    
     font-weight: 600;
     font-size: 20px;
 }
@@ -20,6 +20,7 @@
 
 .slider__list-wrapper {
     width: 100%;
+    overflow: hidden;
 }
 
 .slider__list {
