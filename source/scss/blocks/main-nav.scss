@@ -19,6 +19,11 @@
     
     top: 40px;
     left: -15px;
+
+    &--hidden-mobile {
+        display: none;
+    }
+    
 }
 
 .main-nav__item {
@@ -69,15 +74,26 @@
 }
 
 @media (min-width: $tablet) {
+    .main-nav {
+    
+        &--open {
+            padding-bottom: 0px;
+        }
+    }
+
     .main-nav__toggle {
         display: none;
     }
     
     .main-nav__list {
-        padding-top: 6px;
+        padding-top: 0px;
         position: initial;
         flex-direction: row;
         width: unset;
+
+        &--hidden-mobile {
+            display: flex;
+        }
     }
 
 
@@ -86,6 +102,8 @@
     }
 
     .main-nav__link {
+        padding: 0;
+        padding-top: 2px;
         &--current {
             color: $blue;
         }

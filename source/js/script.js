@@ -8,8 +8,9 @@ var mainNavListElement = document.querySelector('.main-nav__list');
 function toggleBurger () {
     mainNavElement.classList.toggle('main-nav--open');
     toggleButtonElement.classList.toggle('main-nav__toggle--close');
-    mainNavListElement.classList.toggle('visually-hidden');
+    mainNavListElement.classList.toggle('main-nav__list--hidden-mobile');
 };
+toggleBurger();
 
 toggleButtonElement.addEventListener('click', toggleBurger);
 
