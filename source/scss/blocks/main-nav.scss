@@ -1,21 +1,93 @@
-.main-nav__toggle {
-    display: none;
+.main-nav {
+    position: relative;
+
+    &--open {
+        padding-bottom: 100px;
+    }
 }
 
 .main-nav__list {
     @include list-reset();
 
     display: flex;
-
-    padding-top: 6px;
+    flex-direction: column;
+    
+    position: absolute;
+    background-color: $dark-blue;
+    
+    width: 100vw;
+    
+    top: 40px;
+    left: -15px;
 }
 
-.main-nav__item:not(:last-child) {
-    margin-right: 41px;
+.main-nav__item {
+    display: flex;
 }
 
 .main-nav__link {
-    &--current {
-        color: $blue;
+    display: block;
+    margin: 0 auto;
+    padding: 5px 0;
+}
+
+.main-nav__toggle {
+    position: relative;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    width: 20px;
+    height: 12px;
+
+    &--close {
+        svg {
+            display: none;
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 2px;
+            height: 15px;
+            background-color: $gray;
+            left: 8px;
+            top: -1px;
+            transform: rotate(45deg);
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: 2px;
+            height: 15px;
+            background-color: $gray;
+            left: 8px;
+            top: -1px;
+            transform: rotate(135deg);
+        }
+    }
+}
+
+@media (min-width: $tablet) {
+    .main-nav__toggle {
+        display: none;
+    }
+    
+    .main-nav__list {
+        padding-top: 6px;
+        position: initial;
+        flex-direction: row;
+        width: unset;
+    }
+
+
+    .main-nav__item:not(:last-child) {
+        margin-right: 41px;
+    }
+
+    .main-nav__link {
+        &--current {
+            color: $blue;
+        }
     }
 }

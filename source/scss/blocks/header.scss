@@ -8,16 +8,45 @@
     width: 100%;
     max-width: 1423px;
     margin: 0 auto;
-    padding-right: 42px;
-    padding-left: 40px;
-    padding-top: 22px;
-    padding-bottom: 15px;
+    padding-right: 10px;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 10px;
 }
 
 .header__logo-header {
-    margin-top: 7px;
+    margin-top: 5px;
+    margin-left: 65px;
+    order: 2;
+}
+
+.header__nav {
+    margin-top: 4px;
+    order: 1;
 }
 
 .header__user-nav {
-    margin-right: -6px;
+    order: 3;
+}
+
+@media (min-width: $tablet) {
+    .header__wrapper {
+        padding-right: 42px;
+        padding-left: 40px;
+        padding-top: 22px;
+        padding-bottom: 15px;
+    }
+
+    .header__nav {
+        order: 1;
+    }
+    
+    .header__logo-header {
+        margin-top: 7px;
+        order: 1;
+    }
+    
+    .header__user-nav {
+        margin-right: -6px;
+    }
 }

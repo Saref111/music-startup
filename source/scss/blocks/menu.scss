@@ -2,6 +2,8 @@
     @include list-reset();
     
     display: flex;
+
+    display: none; // temp
 }
 
 .menu__item {

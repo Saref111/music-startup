@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project name</title>
-    <link rel="stylesheet" href="./css/style.min.css">
-    <link rel="preload" href="./fonts/open-sans-v17-latin_cyrillic-ext-600.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/open-sans-v17-latin_cyrillic-ext-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/open-sans-v17-latin_cyrillic-ext-600.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/open-sans-v17-latin_cyrillic-ext-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <script>
     document.createElement("picture");
     </script>
@@ -24,13 +24,10 @@
                     <img src="img/logo-header.svg" width="100" height="21" alt="logo">
                 </a>
             </div>
-            <nav class="header__nav main-nav">
-                <button class="main-nav__toggle main-nav__toggle--no-js" id="button-menu" type="button">
-                    <svg focusable="false" class="main-nav__button-icon-open" width="20" height="18">
-                        <use xlink:href="img/sprite.svg#icon-open"></use>
-                    </svg>
-                    <svg focusable="false" class="main-nav__button-icon-close" width="20" height="20">
-                        <use xlink:href="img/sprite.svg#icon-close"></use>
+            <nav class="header__nav main-nav main-nav--open">
+                <button class="main-nav__toggle main-nav__toggle--close" id="button-menu" type="button">
+                    <svg focusable="false" class="main-nav__button-icon" width="20" height="12">
+                        <use xlink:href="img/sprite.svg#icn_burger"></use>
                     </svg>
                     <span class="visually-hidden">Открыть меню</span>
                 </button>
