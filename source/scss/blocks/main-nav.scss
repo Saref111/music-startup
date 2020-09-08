@@ -2,7 +2,7 @@
     position: relative;
 
     &--open {
-        padding-bottom: 100px;
+        padding-bottom: 150px;
     }
 }
 
@@ -34,6 +34,10 @@
     display: block;
     margin: 0 auto;
     padding: 5px 0;
+
+    &--current {
+        color: $blue;
+    }
 }
 
 .main-nav__toggle {
@@ -104,8 +108,5 @@
     .main-nav__link {
         padding: 0;
         padding-top: 2px;
-        &--current {
-            color: $blue;
-        }
     }
 }
