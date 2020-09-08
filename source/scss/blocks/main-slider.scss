@@ -1,7 +1,7 @@
 .main-slider {
     position: relative;
     overflow: hidden;
-    min-height: 500px;
+    min-height: 575px;
     top: 0;
     left: 0;
 
@@ -58,8 +58,8 @@
     position: absolute;
     display: flex;
 
-    width: 100% * $main_sliders_count;
-    height: 500px;
+    width: calc(100% * $main_sliders_count);
+    min-height: 500px;
 }
 
 .main-slider__slide-wrapper {

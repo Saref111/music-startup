@@ -1,19 +1,19 @@
 .main-slide {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    
     
     background-image: url("../img/image53.jpg");
     background-repeat: no-repeat;
-    background-position: 0 -1px;
+    background-position: center;
     background-size: cover;
     
     color: #ffffff;
     
-    padding-left: 148px;
-    padding-top: 158px;
-    padding-right: 152px;
-    padding-bottom: 60px;
+    padding: 0;
+    padding-bottom: 70px;
 
     border-radius: 16px;
 }
@@ -28,30 +28,33 @@
     margin: 0;
     margin-bottom: 8px;
 
+    text-align: center;
     font-weight: 600;
-    font-size: 50px;
-    line-height: 68px;
+    font-size: 32px;
+    line-height: 40px;
 }
 
 .main-slide__author {
+    text-align: center;
     margin: 0;
     margin-bottom: 28px;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 25px;
 }
 
 .main-slide__description {
+    text-align: center;
     margin: 0;
     margin-bottom: 13px;
 
-    width: 418px;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 25px;
 }
 
 .main-slide__address {
     font-style: normal;
+    text-align: center;
 }
 
 .main-slide__address-icon {
@@ -60,17 +63,17 @@
     left: -2px;
 }
 
+
 .main-slide__more {
-    margin-top: 16px;
+    margin-top: 30px;
     background: rgba(15, 17, 29, 0.76);
-    padding: 22px 28px;
-    padding-bottom: 37px;
+    padding: 0px 28px;
+    padding-bottom: 37px; //
     border-radius: 16px;
 }
 
-.main-slide__info {
-    @include list-reset();
-    
+.main-slide__info {   
+    width: 100%;
     padding-top: 7px;
     padding-right: 19px;
     margin-bottom: 22px;
@@ -113,4 +116,59 @@
     font-size: 18px;
     margin: 0;
     margin-left: 4px;
+}
+
+@media (min-width: $tablet) {
+    .main-slide {
+        padding-top: 58px;
+    }
+    .main-slide__more {
+        margin-top: 16px;
+    }
+}
+
+@media (min-width: 916px) {
+    
+    .main-slide {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        
+        padding-left: 148px;
+        padding-top: 158px;
+        padding-right: 152px;
+        padding-bottom: 60px;
+    }
+    
+    .main-slide__title {
+        text-align: left;
+        margin: 0;
+        margin-bottom: 8px;
+    
+        font-weight: 600;
+        font-size: 50px;
+        line-height: 68px;
+    }
+    
+    .main-slide__author {
+        text-align: left;
+        margin: 0;
+        margin-bottom: 28px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+    }
+    
+    .main-slide__description {
+        text-align: left;
+        margin: 0;
+        margin-bottom: 13px;
+    
+        width: 418px;
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .main-slide__address {
+        text-align: left;
+    }
 }
