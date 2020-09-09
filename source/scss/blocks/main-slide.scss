@@ -26,6 +26,7 @@
 
 .main-slide__title {
     margin: 0;
+    margin-top: 30px;
     margin-bottom: 8px;
 
     text-align: center;
@@ -118,7 +119,15 @@
     margin-left: 4px;
 }
 
-@media (min-width: $tablet) {
+@media (min-width: 716px) {
+    .main-slide {
+        padding-top: 58px;
+    }
+    
+
+}
+
+@media (min-width: 716px) {
     .main-slide {
         padding-top: 58px;
     }
