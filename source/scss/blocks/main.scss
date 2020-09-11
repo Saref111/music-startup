@@ -2,6 +2,26 @@
     background-color: $bg-blue;
 
     margin-bottom: 47px;
+
+    &--event {
+        .main__menu {
+            display: none;
+        }
+
+        .main__main-slider {
+            min-height: 570px;
+        }
+    }
+}
+
+@media (min-width: 733px) and (max-width: 915px) {
+    .main {
+        &--event {
+            .main__main-slider {
+                min-height: 420px;
+            }
+        }
+    }
 }
 
 .main__wrapper {
@@ -17,7 +37,8 @@
     margin-bottom: 38px;
 }
 
-.main__main-slider:not(:last-child) {
+.main__main-slider,
+.main__slider:not(:last-child) {
     margin-bottom: 33px;
 }
 

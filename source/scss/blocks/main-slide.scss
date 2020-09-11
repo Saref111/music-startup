@@ -154,6 +154,15 @@
         padding-top: 158px;
         padding-right: 152px;
         padding-bottom: 60px;
+        
+        &--event {
+            padding-bottom: 100px;
+            padding-top: 195px;
+
+            & .main-slide__more {
+                margin-top: 30px;
+            }
+        }
     }
     
     .main-slide__title {
