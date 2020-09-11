@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event name</title>
-    <link rel="stylesheet" href="./css/style.min.css">
-    <link rel="preload" href="./fonts/open-sans-v17-latin_cyrillic-ext-600.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/open-sans-v17-latin_cyrillic-ext-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <title>Project name</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/open-sans-v17-latin_cyrillic-ext-600.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/open-sans-v17-latin_cyrillic-ext-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <script>
     document.createElement("picture");
     </script>
@@ -19,20 +19,15 @@
 <body>
     <header class="header">
         <div class="header__wrapper">
-            <div class="header__logo-header logo-header logo-header--back">
-                <a href="index.html" class="logo-header__link">
-                    <svg focusable="false" class="logo-header__icon-back" width="20" height="18">
-                        <use xlink:href="img/sprite.svg#icn_back-arrow"></use>
-                    </svg>
+            <div class="header__logo-header logo-header">
+                <a class="logo-header__link">
+                    <img src="img/logo-header.svg" width="100" height="21" alt="logo">
                 </a>
             </div>
-            <nav class="header__nav main-nav">
-                <button class="main-nav__toggle main-nav__toggle--no-js" id="button-menu" type="button">
-                    <svg focusable="false" class="main-nav__button-icon-open" width="20" height="18">
-                        <use xlink:href="img/sprite.svg#icon-open"></use>
-                    </svg>
-                    <svg focusable="false" class="main-nav__button-icon-close" width="20" height="20">
-                        <use xlink:href="img/sprite.svg#icon-close"></use>
+            <nav class="header__nav main-nav main-nav--open">
+                <button class="main-nav__toggle main-nav__toggle--close" id="button-menu" type="button">
+                    <svg focusable="false" class="main-nav__button-icon" width="20" height="12">
+                        <use xlink:href="img/sprite.svg#icn_burger"></use>
                     </svg>
                     <span class="visually-hidden">Открыть меню</span>
                 </button>
@@ -81,10 +76,27 @@
 
     
     <main class="main">
-        <h1 class="visually-hidden">Event name</h1>
+        <h1 class="visually-hidden">Main Header</h1>
         <div class="main__wrapper">
-            <section class="main__event event">
-                
+            <section class="main__menu menu">
+                <h2 class="visually-hidden">Меню страницы</h2>
+                <ul class="menu__list">
+                    <li class="menu__item menu__item--current">
+                        <a href="#" class="menu__link">Все</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Музыка</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Песни</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Видео</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Тексты</a>
+                    </li>
+                </ul>
             </section>
             
             <section class="main__main-slider main-slider swiper-container">
@@ -408,7 +420,7 @@
                 </ul>
             </div>
     </footer>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/polyfils/swiper-bundle.min.js"></script>
     <script src="js/script.min.js">
     </script>
 </body>
