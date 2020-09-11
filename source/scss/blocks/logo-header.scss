@@ -22,13 +22,20 @@
         }
     }
 
-    .logo-header__link--event::before {
-        position: absolute;
-        content: "";
-        width: 30px;
-        height: 30px;
-        left: 0;
-        background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.1032 20.4375L5.66569 15M5.66569 15L11.1032 9.5625M5.66569 15L24.999 15' stroke='%230191D3' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    .logo-header__link--event {
+        width: 100px;
+        height: 21px;
+        margin-right: 20px;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 30px;
+            height: 30px;
+            left: 4px;
+            top: -4px;
+            background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.1032 20.4375L5.66569 15M5.66569 15L11.1032 9.5625M5.66569 15L24.999 15' stroke='%230191D3' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+        }
     }
     
     .logo-header img {
