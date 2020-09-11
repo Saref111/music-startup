@@ -4,21 +4,40 @@
     display: flex;
     justify-content: space-between;
 
-    flex-wrap: wrap; // temp
-
+    flex-wrap: wrap; 
+    text-align: center;
+    
     &--about {
-        width: 500px;
-    }
-
-    &--socials {
-        width: 18.55%;
-        margin-left: 20px;
+        flex-direction: column;
+        margin-bottom: 10px;
     }
 }
 
 .footer-list__link {
     font-size: 16px;
     line-height: 22px;
+}
+
+@media (min-width: $tablet) {
+    .footer-list {
+        @include list-reset();
+    
+        display: flex;
+        justify-content: space-between;
+    
+        flex-wrap: wrap; 
+        text-align: center;
+        
+        &--about {
+            flex-direction: row;
+            width: 500px;
+        }
+    
+        &--socials {
+            width: 18.55%;
+            margin-left: 20px;
+        }
+    }
 }
 
 @media (min-width: $desktop) {

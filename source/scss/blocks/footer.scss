@@ -6,12 +6,22 @@
     max-width: 1433px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
-    padding-top: 28px;
-    padding-bottom: 22px;
-    padding-left: 25.5%;
-    padding-right: 2.8%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+@media (min-width: $tablet) {
+    .footer__wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 28px;
+        padding-bottom: 22px;
+        padding-left: 25.5%;
+        padding-right: 2.8%;
+    }
+}
+
 
 @media (min-width: $desktop) {
     .footer__wrapper {
