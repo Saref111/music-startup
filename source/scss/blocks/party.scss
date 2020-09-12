@@ -1,0 +1,46 @@
+.party {
+    width: 100%;
+    max-width: 345px;
+    margin: 0 auto;
+}
+
+.party__header-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.party__title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
+    color: #ffffff;
+}
+
+.party__link {
+    margin-top: 15px;
+    color: $blue;
+}
+
+.party__list {
+    @include list-reset();
+    display: inline-flex;
+}
+
+.party__item {
+    &:not(:first-child) {
+        margin-left: -13px;
+    }
+}
+
+.party__total {
+    display: none;
+}
+
+@media (min-width: 397px) {
+    .party__total {
+        display: inline-block;
+        transform: translateY(-15px) translateX(15px);
+    }
+}

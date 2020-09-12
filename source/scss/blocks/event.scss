@@ -2,11 +2,6 @@
     width: 100%;
 }
 
-.event__map iframe {
-    width: 100%;
-    max-width: 345px;
-}
-
 .event__title {
     font-weight: 600;
     font-size: 20px;
@@ -15,6 +10,7 @@
 
 .event__text {
     max-width: 580px;
+    margin: 0 auto;
 
     font-weight: normal;
     font-size: 18px;
@@ -108,4 +104,42 @@
         margin-left: 4px;
         
     }
+}
+
+.event__map {
+    margin: 0 auto;
+    max-width: 345px;
+
+    position: relative;
+
+    background-image: url("../img/map.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.event__map iframe {
+    width: 100%;
+    max-width: 345px;
+}
+
+.event__map-pin {
+    position: absolute;
+
+    width: 50px;
+    height: 50px;
+    
+    top: 50%;
+    margin-top: -45px;
+    left: 50%;
+    margin-left: -15px;
+}
+
+.event__address {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+
+    max-width: 300px;
+    margin: 0 auto;
 }
