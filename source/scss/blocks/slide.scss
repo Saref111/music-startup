@@ -1,6 +1,12 @@
 .slide {
     display: flex;
     flex-direction: column; 
+    
+    &--video {
+        flex-direction: row; 
+        flex-wrap: wrap;
+        min-width: 319px;
+    }
 }
 
 .slide__title {
@@ -19,6 +25,15 @@
 
 .slide__title-link {
     color: #ffffff;
+}
+
+.slide__img-link {
+    &--video {
+        margin: 0;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+    }
 }
 
 .slide__img {
@@ -44,11 +59,12 @@
     }
 
     &--video {
-        display: inline;
+        margin-right: 90px;
     }
 }
 
 .slide__info {
     display: inline;
+    margin: 0;
     order: 3;
 }
