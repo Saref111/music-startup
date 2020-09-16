@@ -7,6 +7,13 @@
     vertical-align: top;
 }
 
+@media (max-width: 1397px) {
+    .tracklist {
+        width: 651px;
+        margin: 0 auto;
+    }
+}
+
 .tracklist__item {
     display: flex;
     background-color: #0F111D;
@@ -18,10 +25,6 @@
     max-width: 651px;
 
     margin-bottom: 28px;
-
-    &:nth-child(5)   {
-        margin-bottom: 0;
-    }
 }
 
 .tracklist__play {
@@ -72,6 +75,20 @@
     font-size: 14px;
     color: #ffffff;
 }
+
+@media (max-width: $tablet) {
+    .tracklist {
+        width: 100%;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .tracklist__time {
+        display: none;
+    }
+}
+
+
 
 .tracklist__controls {
     padding-top: 15px;

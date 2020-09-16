@@ -1,0 +1,48 @@
+.hover-block {
+    width: 100%;
+    z-index: 10;
+    padding-top: 40%;
+}
+
+.hover-block__hover-btn-wrapper {
+    @include list-reset();
+
+    display: flex;
+    width: 140px;
+    margin: 0 auto;
+    margin-bottom: 27px;
+    padding-top: 4px;
+    justify-content: space-between;
+}
+
+.hover-block__hover-btn {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    
+    &:hover,
+    &:active {
+        opacity: 1;
+        svg {
+            fill: #0191D3;
+        }
+    }
+}
+
+.hover-block__button-icn {
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    fill: #ffffff;
+
+}
+
+.hover-block__info {
+    display: block;
+    margin: 0 auto;
+    width: 84px;
+}
