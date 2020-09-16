@@ -38,7 +38,19 @@
 }
 
 .main__main-slider,
-.main__slider:not(:last-child) {
+.main__slider {
     margin-bottom: 33px;
+
+    &--round {
+        margin-bottom: 70px;
+    }
+
+    &--for-round {
+        margin-bottom: 70px;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 
