@@ -1,20 +1,93 @@
 .tracklist {
     @include list-reset();
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    vertical-align: top;
 }
 
 .tracklist__item {
     display: flex;
+    background-color: #0F111D;
+    padding-left: 20px;
+    padding-right: 2px;
+    padding-top: 13px;
+    padding-bottom: 11px;
+    border-radius: 12px;
+    max-width: 651px;
+
+    margin-bottom: 28px;
+
+    &:nth-child(5)   {
+        margin-bottom: 0;
+    }
+}
+
+.tracklist__play {
+    position: relative;
+    border: none;
+    margin: 0;
+    margin-right: 15px;
+    padding: 0;
+    background-color: transparent;
+    border-radius: 10px;
+
+    img {
+        border-radius: 10px;
+    }
+
+    &--button::before {
+        position: absolute;
+        content: "";
+        width: 31px;
+        height: 31px;
+        background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='15.5914' cy='16.0862' r='15.5413' fill='%230191D3' fill-opacity='0.6'/%3E%3Cpath d='M17.1018 20.5281C14.8709 22.0916 13.7554 22.8734 12.8076 22.5982C11.8599 22.3231 11.8599 21.2175 11.8599 19.0064V13.1657C11.8599 10.9546 11.8599 9.84901 12.8076 9.57387C13.7554 9.29874 14.8709 10.0805 17.1018 11.644L21.2687 14.5643C22.2923 15.2817 22.8041 15.6404 22.8041 16.0861C22.8041 16.5318 22.2923 16.8904 21.2687 17.6078L17.1018 20.5281Z' fill='white'/%3E%3C/svg%3E ");
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
+
+.tracklist__info {
+    margin: 0;
+    margin-right: 57px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tracklist__author {
+    font-size: 14px;
+}
+
+.tracklist__songname {
+    color: #ffffff;
+}
+
+.tracklist__time {
+    display: block;
+    margin: 0;
+    margin-right: 100px;
+    padding-top: 14px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.tracklist__controls {
+    padding-top: 15px;
 }
 
 .tracklist__btn {
-    border: none;
     margin: 0;
     padding: 0;
     background-color: transparent;
+    border: none;
 }
 
 .tracklist__btn-icn {
     width: 25px;
     height: 25px;
     background-color: transparent;
+    margin-right: 17px;
+    
 }
