@@ -49,8 +49,16 @@
         margin-bottom: 70px;
     }
 
+    &--square {
+        margin-bottom: 70px;
+    }
+
     &:last-child {
         margin-bottom: 0;
+    }
+
+    &--video {
+        margin-bottom: 45px;
     }
 }
 

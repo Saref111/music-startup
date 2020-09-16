@@ -1,8 +1,15 @@
 .addition-info {
     display: inline-block;
+    margin-left: 100px;
+
+    font-size: 14px;
 }
 
 .addition-info__button-icn {
-    width: 16px;
-    height: 16px;
+    width: 15px;
+    height: 15px;
+
+    &--view {
+        margin-right: 10px;
+    }
 }

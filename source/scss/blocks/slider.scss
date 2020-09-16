@@ -31,3 +31,9 @@
     width: 1344px;
     justify-content: space-between;
 }
+
+.slider__slide-wrapper {
+    &--video {
+        margin-right: 23px;
+    }
+}
