@@ -1,0 +1,20 @@
+.tracklist {
+    @include list-reset();
+}
+
+.tracklist__item {
+    display: flex;
+}
+
+.tracklist__btn {
+    border: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+}
+
+.tracklist__btn-icn {
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+}
