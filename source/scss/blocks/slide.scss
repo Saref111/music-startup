@@ -16,6 +16,10 @@
             width: 100%;
             left: 0;
             height: 200px;
+
+            &--gray:hover {
+                background-color: rgba(15, 17, 29, 0.58);
+            }
         }
 
         .slide__text {

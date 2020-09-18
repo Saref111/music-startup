@@ -1,5 +1,11 @@
 .addition-info {
     font-size: 14px;
+
+    &--music {
+        padding-top: 7px;
+        text-align: center;
+        font-size: 18px;
+    }   
 }
 
 .addition-info__button-icn {
@@ -9,4 +15,13 @@
     &--view {
         margin-right: 10px;
     }
+
+    &--headphones {
+        width: 20px;
+        height: 18px;
+        
+        margin-left: 1px;
+    }
 }
+
+
