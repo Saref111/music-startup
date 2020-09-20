@@ -52,3 +52,17 @@
 .slider__player {
     max-width: 536px;
 }
+
+.slider__tracklist-wrapper {
+    position: relative;
+    margin: 0 auto;
+    height: 555px;
+    overflow: hidden;
+    border-radius:  12px;
+}
+
+@media (min-width: 1333px) {
+    .slider__tracklist-wrapper {
+        margin: 0;
+    }
+}
