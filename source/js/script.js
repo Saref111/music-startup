@@ -31,15 +31,14 @@
     
     if (sliderListWidth > sliderContainerWidth) {    
         var swiperNew = new Swiper('.slider__list-wrapper', {
-            slidesPerView: (sliderContainerWidth / (slide.clientWidth + 72)) + 0.2 ,
-            freeMode: true
+            slidesPerView: (sliderContainerWidth / (slide.clientWidth + 72 * 3))  ,
+            freeMode: true,
         });
     }
     
     var trackListSwiper = new Swiper('.slider__tracklist-wrapper', {
         freeMode: true,
         direction: 'vertical',
-        slidesPerView: 5,
-        spaceBetween: 28
+        slidesPerView: 'auto',
     });
 })();

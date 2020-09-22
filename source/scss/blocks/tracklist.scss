@@ -19,16 +19,26 @@
 }
 
 .tracklist__item {
-    display: flex;
+    
     background-color: #0F111D;
+    border-radius: 12px;
+    max-width: 651px;
+    max-height: 85px;
+    
+    margin-bottom: 28px;
+    
+    &--with-authors {
+        max-height: 224px;
+        // margin-bottom: 140px;    
+    }
+}
+
+.tracklist__item-wrapper {
     padding-left: 20px;
     padding-right: 2px;
     padding-top: 13px;
     padding-bottom: 11px;
-    border-radius: 12px;
-    max-width: 651px;
-
-    margin-bottom: 28px;
+    display: flex;
 }
 
 .tracklist__play {
@@ -69,6 +79,8 @@
 
 .tracklist__songname {
     color: #ffffff;
+    font-size: 18px;
+    font-weight: normal;
 }
 
 .tracklist__time {
@@ -112,5 +124,78 @@
     height: 25px;
     background-color: transparent;
     margin-right: 17px;
+    
+}
+
+.tracklist__author-list {
+    @include list-reset();
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    padding-top: 20px;
+    padding-left: 45px;
+    padding-right: 45px;
+
+    background-color: #0A0C15;
+
+    min-height: 141px;
+
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.tracklist__author-item {
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+
+    align-self: start;
+
+    &:hover,
+    &:focus {
+        .tracklist__hover {
+            top: 0;
+        }
+    }
+}
+
+.tracklist__hover {
+    position: absolute;
+    top: -100%;
+    left: 0;
+
+    display: flex;
+    // align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 33px;
+
+    width: 89px;
+    height: 89px;
+
+    line-height: 16px;
+}
+
+.tracklist__author-name {
+    order: 2;
+    margin: 0;
+    padding: 0;
+    
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 400;    
+    text-align: center;
+    transform: translateY(-10px);
+}
+
+.tracklist__author-type {
+    font-size: 10px;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    order: 1;
+
     
 }
