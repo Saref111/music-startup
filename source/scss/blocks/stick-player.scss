@@ -9,13 +9,15 @@
     height: 80px;
     z-index: 100;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    padding-right: 100px;
 }
 
 .stick-player__controls {
     width: 150px;
     display: flex;
     justify-content: space-between;
+    margin-right: 7%;
 }
 
 .stick-player__button {
@@ -75,4 +77,12 @@
 
 .stick-player__position {
     width: 470px;
+}
+
+.stick-player__addition {
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
 }
