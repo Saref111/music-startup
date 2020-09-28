@@ -57,8 +57,10 @@
         margin-bottom: 0;
     }
 
-    &--video {
-        margin-bottom: 45px;
+    &--video-player {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-top: 70px;
     }
 }
 

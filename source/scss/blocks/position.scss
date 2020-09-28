@@ -10,6 +10,10 @@
     height: 3px;
     background-color: #848484;
     background-image: linear-gradient(to right, #0191D3 0%, #0191D3 50%, transparent 50%, transparent 100%);
+
+    &--video {
+        width: 85%;
+    }
 }
 
 .position__handle {

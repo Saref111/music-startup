@@ -705,30 +705,30 @@
                 <h2 class="visually-hidden">Video name</h2>
 
                 <div class="main__video-player video-player">
-                    <video src="#" poster="img/Rectangle48.png"></video>
+                    <video class="video-player__screen" src="#" poster="img/Rectangle48.png"></video>
                     <div class="video-player__controls">
-                        <button class="video-player__button video-player__button--pause">
+                        <button class="video-player__button video-player__button--play">
                             <span class="visually-hidden">Играть / пауза</span>
                         </button>
                         <span class="video-player__time">1:05/3:45</span>
                         <div class="video-player__position position">
                             <span class="position__time">1:05</span>
-                            <div class="position__scale"></div>
+                            <div class="position__scale position__scale--video"></div>
                             <span class="position__time">2:50</span>
                             <div class="position__handle"></div>
                         </div>
 
                         <div class="video-player__addition">
-                            <button class="video-player__button video-player__button--pause">
-                                <span class="visually-hidden">Играть / пауза</span>
-                                <svg width="36" height="36" class="video-player__icon">
-                                    <use xlink:href="img/sprite.svg#icn_fullscreen"></use>
-                                </svg>
-                            </button>
-                            <button class="video-player__button video-player__button--pause">
-                                <span class="visually-hidden">Играть / пауза</span>
+                            <button class="video-player__add-button">
+                                <span class="visually-hidden">Громкость</span>
                                 <svg width="36" height="36" class="video-player__icon">
                                     <use xlink:href="img/sprite.svg#icn_volume"></use>
+                                </svg>
+                            </button>
+                            <button class="video-player__add-button">
+                                <span class="visually-hidden">Полный экран</span>
+                                <svg width="36" height="36" class="video-player__icon">
+                                    <use xlink:href="img/sprite.svg#icn_fullscreen"></use>
                                 </svg>
                             </button>
                         </div>
