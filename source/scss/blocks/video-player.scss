@@ -2,6 +2,10 @@
     position: relative;
     
     border-radius: 16px;
+
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: rgba(10, 12, 21, 1);
 }
 
 .video-player__screen {
@@ -87,3 +91,42 @@
     background-color: transparent;
     border: none;
 } 
+
+.video-player__user-info-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 45px;
+    padding-top: 17px;
+    align-items: flex-start;
+}
+
+.video-player__user-buttons {
+    @include list-reset();
+    display: flex;
+}
+
+.video-player__user-button {
+    background-color: transparent;
+    border: none;
+}
+
+.video-player__info {
+    margin: 0;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.video-player__comments-link {
+    margin: 0;
+    margin-top: 35px;
+    margin-left: 3.2%;
+
+    a {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 18px;
+        color: #FFFFFF;
+    }
+}

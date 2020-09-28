@@ -1,0 +1,15 @@
+.comments {
+    @include list-reset();
+
+    padding: 0 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    background: #0A0C15;
+    // border-radius: 0px 0px 12px 12px;
+}
+
+.comments__comment {
+    margin: 0;
+    margin-bottom: 20px;
+}

@@ -739,7 +739,7 @@
                                 <button class="video-player__user-button">
                                     <span class="visually-hidden">Поделиться</span>
                                     <svg width="28" height="23" class="video-player__icon">
-                                        <use xlink:href="img/sprite.svg#icn_share-button"></use>
+                                        <use xlink:href="img/sprite.svg#icn_share-button-color"></use>
                                     </svg>
                                 </button>
                             </li>
@@ -825,28 +825,21 @@
                                 <img src="img/MaskGroup-6.png" alt="Name" width="89" height="89">
                             </a>
                         </li>
-                        <li class="author-list__author-item">
-                            <a href="#" class="author-list__author-link">
-                                <div class="author-list__hover">
-                                    <h4 class="author-list__author-name">Артур</h4>
-                                    <p class="author-list__author-type">Исполнитель</p>
-                                </div>
-                                <img src="img/MaskGroup-6.png" alt="Name" width="89" height="89">
-                            </a>
-                        </li>
                     </ul>
+                    <h2 class="video-player__comments-link"><a>Комментарии (2)</a></h2>
                 </div>
                 
-                <h2 class="video-player__comment-link">Комментарии (2)</h2>
                 <ul class="comments">
                     <li class="comments__item">
                         <article class="comments__comment comment">
                             <div class="comment__top">
-                                <h3 class="comment__name"></h3>
                                 <a href="#" class="comment__avatar-link">
-                                    <img class="comment__avatar" src="#" alt="name">
+                                    <img class="comment__avatar" width="39" height="39" src="img/avatar.png" srcset="img/avatar@2x.png 2x" alt="name">
                                 </a>
-                                <p class="comment__text"></p>
+                                <div class="comment__text-area">
+                                    <h3 class="comment__name"><a class="comment__title-link">Максим Ганн</a></h3>
+                                    <p class="comment__text">Офигенный трэк!</p>
+                                </div>
                             </div>
                             <div class="comment__bottom">
                                 <button class="comment__button">
@@ -855,8 +848,33 @@
                                         <use xlink:href="img/sprite.svg#icn_like-color"></use>
                                     </svg>
                                 </button>
-                                <time datetime="2020-09-12 23:44"></time>   
-                                <button class="comment__reply-button">
+                                <time class="comment__time" datetime="2020-09-12 23:44">3 мин.</time>   
+                                <button class="comment__reply-button" type="button">
+                                    Ответить
+                                </button>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="comments__item">
+                        <article class="comments__comment comment">
+                            <div class="comment__top">
+                                <a href="#" class="comment__avatar-link">
+                                    <img class="comment__avatar" width="39" height="39" src="img/avatar.png" srcset="img/avatar@2x.png 2x" alt="name">
+                                </a>
+                                <div class="comment__text-area">
+                                    <h3 class="comment__name"><a class="comment__title-link">Максим Ганн</a></h3>
+                                    <p class="comment__text">Офигенный трэк!</p>
+                                </div>
+                            </div>
+                            <div class="comment__bottom">
+                                <button class="comment__button">
+                                    <span class="visually-hidden">Поставить лайк</span>
+                                    <svg width="28" height="23" class="comment__icon">
+                                        <use xlink:href="img/sprite.svg#icn_like-color"></use>
+                                    </svg>
+                                </button>
+                                <time class="comment__time" datetime="2020-09-12 23:44">3 мин.</time>   
+                                <button class="comment__reply-button" type="button">
                                     Ответить
                                 </button>
                             </div>
@@ -865,7 +883,7 @@
                 </ul>
                 <form class="send-message-form" action="#" method="POST">
                     <label for="comment-input" class="send-message-form__user-avatar">
-                        <img src="#" alt="user name">
+                        <img width="39" height="39" src="img/avatar.png" srcset="img/avatar@2x.png 2x" alt="user name">
                     </label>
                     <input class="send-message-form__input" type="text" name="comment-text" id="comment-input">
                     <button class="send-message-form__btn" type="submit">Отправить</button>
