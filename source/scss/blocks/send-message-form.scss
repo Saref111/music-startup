@@ -1,0 +1,35 @@
+.send-message-form {
+    margin: 0;
+    padding: 0 40px;
+    background: #0A0C15;
+    border-radius: 0px 0px 12px 12px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 70px;
+}
+
+.send-message-form__user-avatar {
+    margin-right: 14px;
+}
+
+.send-message-form__input {
+    border: 1px solid #3F424A;
+    background-color: transparent;
+    border-radius: 10px;
+    width: auto;
+    min-width: 297px;
+    min-height: 34px;
+    padding-left: 10px;
+    margin-top: 3px;
+    margin-right: 25px;
+}
+
+.send-message-form__btn {
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+
+    color: #0191D3;
+}
