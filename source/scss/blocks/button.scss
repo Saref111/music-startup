@@ -1,0 +1,15 @@
+.button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-align: center;
+    
+    &--blue {
+        background-color: #0191D3;
+    }
+    &--transparent {
+        background-color: transparent;
+        color: #fff;
+    }
+
+}
