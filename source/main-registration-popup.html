@@ -1376,11 +1376,8 @@
         </div>
     </footer>
     <section class="popup">
-        <div class="popup__window">
+        <div class="popup__window popup__window--taller">
             <h2 class="popup__title popup__title--taller">Регистрация</h2>
-            <p class="popup__text">
-                Позже вы сможете изменить его в настройках профиля
-            </p>
             <form class="popup__form" id="reg-form" action="#" method="post">
                 <input class="popup__input popup__input--no-mb" type="email" name="email" id="email" placeholder="E-mail" required>
                 <input class="popup__input popup__input--no-mb" type="password" name="password" id="password" minlength="3" placeholder="Пароль" required>
@@ -1392,7 +1389,15 @@
                     <a href="#" class="socials__link">
                         <span class="visually-hidden"></span>
                         <svg class="socials__icon">
-                            <use xlink:href="img/sprite.svg#icn_"></use>
+                            <use xlink:href="img/sprite.svg#icn_fb-reg"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="socials__item">
+                    <a href="#" class="socials__link">
+                        <span class="visually-hidden"></span>
+                        <svg class="socials__icon socials__icon--ig">
+                            <use xlink:href="img/sprite.svg#icn_ig-reg"></use>
                         </svg>
                     </a>
                 </li>
@@ -1400,20 +1405,13 @@
                     <a href="#" class="socials__link">
                         <span class="visually-hidden"></span>
                         <svg class="socials__icon">
-                            <use xlink:href="img/sprite.svg#icn_"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="socials__item">
-                    <a href="#" class="socials__link">
-                        <span class="visually-hidden"></span>
-                        <svg class="socials__icon">
-                            <use xlink:href="img/sprite.svg#icn_"></use>
+                            <use xlink:href="img/sprite.svg#icn_google-reg"></use>
                         </svg>
                     </a>
                 </li>
             </ul>
-            <button form="reg-form" class="popup__button button button--blue" type="submit">Регистрация</button>
+            <button form="reg-form" class="popup__button button button--disabled" disabled type="submit">Регистрация</button>
+            <p class="popup__text popup__text--small">Регистрируясь, Вы соглашаетесь с <a href="#" class="popup__text--small popup__text--small--blue">Условиями использования</a> и <a href="#" class="popup__text--small popup__text--small--blue">Политикой конфиденциальности</a> </p>
             <button class="popup__button popup__button--close button button--transparent" type="button"><span class="visually-hidden">Закрыть</span></button>
 
         </div>

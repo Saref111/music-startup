@@ -12,4 +12,11 @@
         color: #fff;
     }
 
+    &--disabled,
+    &:disabled {
+        opacity: 0.1;
+        &:hover {
+            opacity: 0.1;
+        }
+    }
 }

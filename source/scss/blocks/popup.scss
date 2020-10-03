@@ -24,7 +24,9 @@
         padding: 0 150px;
         padding-top: 156px;
         
-
+        &--taller {
+            padding-top: 40px;
+        }
     }
 
     &__logo {
@@ -37,11 +39,35 @@
         line-height: 27px;
         text-align: center;
         color: #FFFFFF;
+
+        &--taller {
+            font-weight: normal;
+            font-size: 40px;
+            line-height: 18px;
+            margin-bottom: 40px;
+            margin-top: 0;
+        }
     }
 
+    &__socials {
+        margin-bottom: 40px;
+        margin-top: 20px;
+    }
     &__text {
         text-align: center;
         max-width: 292px;
+
+        &--small {
+            margin: 0;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+            color: #FFFFFF;
+            &--blue {
+                color: #0191D3;
+            }
+        }
     }
     &__input {
         width: 100%;
@@ -64,6 +90,9 @@
             color: #A6AAB7;
         }
         margin-bottom: 40px;
+        &--no-mb {
+            margin-bottom: 18px;
+        }
     }
     &__button {
         font-weight: 500;
