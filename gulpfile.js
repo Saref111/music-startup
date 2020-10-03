@@ -100,7 +100,7 @@ gulp.task("clean", function () {
 });
 
 gulp.task("sprite", function () {
-  return gulp.src("source/img/icn_*.svg")
+  return gulp.src("source/img/icn/icn_*.svg")
     .pipe(imagemin([imagemin.svgo()]))
     .pipe(svgstore({
       inlineSvg: true

@@ -1377,14 +1377,43 @@
     </footer>
     <section class="popup">
         <div class="popup__window">
-            <h2 class="popup__title">Придумайте имя пользователя</h2>
+            <h2 class="popup__title popup__title--taller">Регистрация</h2>
             <p class="popup__text">
                 Позже вы сможете изменить его в настройках профиля
             </p>
-            <form class="popup__form" action="#" method="post">
-                <input class="popup__input" type="text" name="name" id="name" minlength="3" placeholder="Имя пользователя" required>
-                <button class="popup__button button button--blue" type="submit">Регистрация</button>
+            <form class="popup__form" id="reg-form" action="#" method="post">
+                <input class="popup__input popup__input--no-mb" type="email" name="email" id="email" placeholder="E-mail" required>
+                <input class="popup__input popup__input--no-mb" type="password" name="password" id="password" minlength="3" placeholder="Пароль" required>
+                <input class="popup__input" type="password" name="password-repeat" id="password-repeat" minlength="3" placeholder="Повторите пароль" required>
             </form>
+            <p class="popup__text--small">или</p>
+            <ul class="popup__socials socials">
+                <li class="socials__item">
+                    <a href="#" class="socials__link">
+                        <span class="visually-hidden"></span>
+                        <svg class="socials__icon">
+                            <use xlink:href="img/sprite.svg#icn_"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="socials__item">
+                    <a href="#" class="socials__link">
+                        <span class="visually-hidden"></span>
+                        <svg class="socials__icon">
+                            <use xlink:href="img/sprite.svg#icn_"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="socials__item">
+                    <a href="#" class="socials__link">
+                        <span class="visually-hidden"></span>
+                        <svg class="socials__icon">
+                            <use xlink:href="img/sprite.svg#icn_"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <button form="reg-form" class="popup__button button button--blue" type="submit">Регистрация</button>
             <button class="popup__button popup__button--close button button--transparent" type="button"><span class="visually-hidden">Закрыть</span></button>
 
         </div>
