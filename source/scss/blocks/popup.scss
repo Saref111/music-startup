@@ -31,9 +31,34 @@
         margin-bottom: 24px;
     }
 
+    &__title {
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 27px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
     &__text {
         text-align: center;
         max-width: 292px;
+    }
+    &__input {
+        width: 100%;
+        border: 1px solid #2D303E;
+        border-radius: 10px;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 18px;
+        color: #A6AAB7;
+        background-color: transparent;
+        padding: 14px 23px;
+        &::placeholder {
+            font-size: 15px;
+            line-height: 18px;
+            color: #A6AAB7;
+        }
+        margin-bottom: 40px;
     }
     &__button {
         font-weight: 500;
