@@ -50,9 +50,14 @@
         font-weight: normal;
         font-size: 15px;
         line-height: 18px;
-        color: #A6AAB7;
+        color: #FFFFFF;
         background-color: transparent;
         padding: 14px 23px;
+        &:active,
+        &:focus {
+            border: 1px solid #0191D3;
+            outline: none;
+        }
         &::placeholder {
             font-size: 15px;
             line-height: 18px;
