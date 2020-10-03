@@ -47,6 +47,13 @@
             margin-bottom: 40px;
             margin-top: 0;
         }
+
+        &--bold {
+            margin: 0;
+            margin-bottom: 30px;
+            font-size: 40px;
+            line-height: 45px;
+        }
     }
 
     &__socials {
@@ -56,6 +63,7 @@
     &__text {
         text-align: center;
         max-width: 292px;
+        margin-bottom: 40px;
 
         &--small {
             margin: 0;
@@ -92,6 +100,7 @@
         margin-bottom: 40px;
         &--no-mb {
             margin-bottom: 18px;
+            font-family: Open Sans;
         }
     }
     &__button {
@@ -100,7 +109,10 @@
         line-height: 18px;
         border-radius: 10px;
         color: #ffffff;
-        padding: 14px 110px;
+        padding: 14px;
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
         display: block;
         margin-bottom: 36px;
 
