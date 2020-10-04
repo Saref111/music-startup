@@ -9,6 +9,10 @@
     z-index: 100500;
     backdrop-filter: blur(20px);
 
+    &--hidden {
+        display: none;
+    }
+
     &__window {
         min-height: 630px;
         max-width: 604px;
@@ -26,6 +30,9 @@
         
         &--taller {
             padding-top: 40px;
+        }
+        &--enter {
+            padding-top: 80px;
         }
     }
 
@@ -76,6 +83,9 @@
                 color: #0191D3;
             }
         }
+        &--mt {
+            margin-top: 40px;
+        }
     }
     &__input {
         width: 100%;
@@ -87,10 +97,19 @@
         color: #FFFFFF;
         background-color: transparent;
         padding: 14px 23px;
+        
+        &:-internal-autofill-selected {
+            background-color: transparent;
+
+        }
         &:active,
         &:focus {
             border: 1px solid #0191D3;
             outline: none;
+
+            &:invalid {
+                border: 1px solid #D30E01;
+            }
         }
         &::placeholder {
             font-size: 15px;
