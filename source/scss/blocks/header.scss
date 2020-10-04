@@ -1,5 +1,14 @@
 .header {
     background-color: $dark-blue;
+    &__create-button {
+        padding: 7px 24px;
+        border-radius: 12px;
+        order: 3;
+        margin: 0 -200px;
+        font-size: 16px;
+        line-height: 22px;
+        color: #ffffff;
+    }
 }
 
 .header__wrapper {
@@ -27,6 +36,9 @@
 
 .header__user-nav {
     order: 3;
+    &--4th {
+        order: 4;
+    }
 }
 
 @media (min-width: $tablet) {

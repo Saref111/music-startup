@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project name</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/open-sans-v17-latin_cyrillic-ext-600.woff2" as="font" type="font/woff2"
+        crossorigin="anonymous">
+    <link rel="preload" href="fonts/open-sans-v17-latin_cyrillic-ext-regular.woff2" as="font" type="font/woff2"
+        crossorigin="anonymous">
+    <script>
+        document.createElement("picture");
+    </script>
+    <script src="js/polyfils/picturefill.min.js" async></script>
+    <script src="js/polyfils/svg4everybody.min.js"></script>
+    <script>
+        svg4everybody(); // run it now or whenever you are ready
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="header__logo-header logo-header">
+                <a class="logo-header__link">
+                    <img src="img/logo-header.svg" width="100" height="21" alt="logo">
+                </a>
+            </div>
+            <nav class="header__nav main-nav main-nav--open">
+                <button class="main-nav__toggle main-nav__toggle--close" id="button-menu" type="button">
+                    <svg focusable="false" class="main-nav__button-icon" width="20" height="12">
+                        <use xlink:href="img/sprite.svg#icn_burger" />
+                    </svg>
+                    <span class="visually-hidden">Открыть меню</span>
+                </button>
+                <ul class="main-nav__list">
+                    <li class="main-nav__item">
+                        <a href="" class="main-nav__link main-nav__link--current">Главная</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="" class="main-nav__link">Студии</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="" class="main-nav__link">Трансляции</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="" class="main-nav__link">Проекты</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="header__create-button button button--blue">Создать проект</button>
+            <div class="header__user-nav header__user-nav--4th user-nav">
+                <ul class="user-nav__list">
+                    <li class="user-nav__item">
+                        <button class="user-nav__btn" type="button">
+                            <svg class="user-nav__icon" width="24" height="24">
+                                <use xlink:href="img/sprite.svg#icn_search" />
+                            </svg>
+                        </button>
+                    </li>
+                    <li class="user-nav__item">
+                        <button class="user-nav__btn" type="button">
+                            <svg class="user-nav__icon" width="25" height="25">
+                                <use xlink:href="img/sprite.svg#icn_notifications" />
+                            </svg>
+                        </button>
+                    </li>
+                    <li class="user-nav__item">
+                        <button class="user-nav__btn user-nav__btn--avatar">
+                            <picture>
+                                <img src="./img/avatar.png" srcset="img/avatar@2x.png 2x" alt="User avatar">
+                            </picture>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="main">
+        <h1 class="visually-hidden">Main Header</h1>
+        <div class="main__wrapper">
+            
+        </div>
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <h2 class="visually-hidden">Информация о нас</h2>
+            <ul class="footer__footer-list footer-list footer-list--about">
+                <li class="footer-list__item">
+                    <a href="#" class="footer-list__link">Кто мы</a>
+                </li>
+                <li class="footer-list__item">
+                    <a href="#" class="footer-list__link">Инвесторам</a>
+                </li>
+                <li class="footer-list__item">
+                    <a href="#" class="footer-list__link">Политика конфиденциальности</a>
+                </li>
+            </ul>
+            <h2 class="visually-hidden">Мы в социальных сетях</h2>
+            <ul class="footer__footer-list footer-list footer-list--socials">
+                <li class="footer-list__item footer-list__item--socials">
+                    <a href="#" class="footer-list__link">
+                        <span class="visually-hidden">Instagram</span>
+                        <svg class="footer-list__icon" width="25" height="25">
+                            <use xlink:href="img/sprite.svg#icn_ig" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer-list__item footer-list__item--socials">
+                    <a href="#" class="footer-list__link">
+                        <span class="visually-hidden">Facebook</span>
+                        <svg class="footer-list__icon" width="25" height="25">
+                            <use xlink:href="img/sprite.svg#icn_fb" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer-list__item footer-list__item--socials">
+                    <a href="#" class="footer-list__link">
+                        <span class="visually-hidden">Youtube</span>
+                        <svg class="footer-list__icon" width="25" height="25">
+                            <use xlink:href="img/sprite.svg#icn_youtube" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer-list__item footer-list__item--socials">
+                    <a href="#" class="footer-list__link">
+                        <span class="visually-hidden">Telegram</span>
+                        <svg class="footer-list__icon" width="25" height="25">
+                            <use xlink:href="img/sprite.svg#icn_telegram" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="js/polyfils/swiper-bundle.min.js"></script>
+    <script src="js/script.min.js"></script>
+</body>
+
+</html>
